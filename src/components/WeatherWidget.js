@@ -12,7 +12,7 @@ const WeatherWidget = () => {
       setLoading(true);
       try {
         const response = await axios.get(
-          `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=03f47661a631df2a82760628ad8e8671`
+          `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=yourAPIKEY`
         );
         setWeather(response.data);
       } catch (error) {
